@@ -9,7 +9,7 @@
     
   </head>
   <body>
-    <a-scene id="scene" physics="debug:false;restitution:0.5">
+    <a-scene id="scene" physics="debug:true;restitution:0.5">
 
       <!--Assets-->
       <a-assets>
@@ -66,26 +66,26 @@
       static-body visible="true">
     </a-cylinder>
       <!--Boxes-->
-      <a-entity position="0 0 -10">
-        <a-entity id="pin1" position="0 0 -2" gltf-model="#pins" scale="4 4 4" dynamic-body="mass:1;shape:auto"></a-entity>
+      <a-entity id="pinball" position="0 0 -10">
+        <a-entity id="pin1" position="0 0 -22" gltf-model="#pins" scale="4 4 4" dynamic-body="mass:1;shape:auto"></a-entity>
         
-        <a-entity id="pin2" position="-0.5 0 -3" gltf-model="#pins" scale="4 4 4" dynamic-body="mass:1;shape:auto"></a-entity>
+        <a-entity id="pin2" position="-0.5 0 -23" gltf-model="#pins" scale="4 4 4" dynamic-body="mass:1;shape:auto"></a-entity>
         
-        <a-entity id="pin3" position="-3 0 -3" gltf-model="#pins" scale="4 4 4" dynamic-body="mass:1;shape:auto"></a-entity>
+        <a-entity id="pin3" position="-3 0 -23" gltf-model="#pins" scale="4 4 4" dynamic-body="mass:1;shape:auto"></a-entity>
         
-        <a-entity id="pin4" position="-2 0 -2" gltf-model="#pins" scale="4 4 4" dynamic-body="mass:1;shape:auto"></a-entity>
+        <a-entity id="pin4" position="-2 0 -22" gltf-model="#pins" scale="4 4 4" dynamic-body="mass:1;shape:auto"></a-entity>
         
-        <a-entity id="pin5" position="-1 0 -1" gltf-model="#pins" scale="4 4 4" dynamic-body="mass:1;shape:auto"></a-entity>
+        <a-entity id="pin5" position="-1 0 -21" gltf-model="#pins" scale="4 4 4" dynamic-body="mass:1;shape:auto"></a-entity>
         
-        <a-entity id="pin6" position=" 0 0 0" gltf-model="#pins" scale="4 4 4" dynamic-body="mass:1;shape:auto"></a-entity>
+        <a-entity id="pin6" position=" 0 0 20" gltf-model="#pins" scale="4 4 4" dynamic-body="mass:1;shape:auto"></a-entity>
 
-        <a-entity id="pin7" position="1 0 -1" gltf-model="#pins" scale="4 4 4" dynamic-body="mass:1;shape:auto"></a-entity>
+        <a-entity id="pin7" position="1 0 -21" gltf-model="#pins" scale="4 4 4" dynamic-body="mass:1;shape:auto"></a-entity>
         
-        <a-entity id="pin8" position="2 0 -2" gltf-model="#pins" scale="4 4 4" dynamic-body="mass:1;shape:auto"></a-entity>
+        <a-entity id="pin8" position="2 0 -22" gltf-model="#pins" scale="4 4 4" dynamic-body="mass:1;shape:auto"></a-entity>
         
-        <a-entity id="pin9" position="3 0 -3" gltf-model="#pins" scale="4 4 4" dynamic-body="mass:1;shape:auto"></a-entity>
+        <a-entity id="pin9" position="3 0 -23" gltf-model="#pins" scale="4 4 4" dynamic-body="mass:1;shape:auto"></a-entity>
         
-        <a-entity id="pin10" position="0.5 0 -3" gltf-model="#pins" scale="4 4 4" dynamic-body="mass:1;shape:auto"></a-entity>
+        <a-entity id="pin10" position="0.5 0 -23" gltf-model="#pins" scale="4 4 4" dynamic-body="mass:1;shape:auto"></a-entity>
       </a-entity>
       
     </a-scene>
